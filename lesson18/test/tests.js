@@ -19,7 +19,7 @@ describe('Checking chromedriver website', function() {
         const titleChromeExtensions = await driver.findElement(By.xpath('//*[@id="WDxLfe"]/ul[1]/child::li[3]//a'));
         await titleChromeExtensions.click();
         const mainTitleChromeExtensions = await driver.findElement(By.css('span.Rn3Z1b'));
-        await driver.actions().doubleClick(mainTitleChromeExtensions).perform();
+        await driver.executeScript("document.querySelector('span.Rn3Z1b').style.backgroundColor = 'green';");
         expect(await mainTitleChromeExtensions.getText()).to.equal('Chrome Extensions');
     });
 
