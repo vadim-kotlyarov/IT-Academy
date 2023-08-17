@@ -142,7 +142,14 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec',['allure', {outputDir: 'allure-results'}],'cucumberjs-json'],
+    reporters: ['spec',['allure', {outputDir: 'allure-results'}], 
+    [
+        'cucumberjs-json',
+        {
+            jsonFolder: 'test_report/',
+            language: 'en',
+        },
+    ]],
 
     //
     // If you are using Cucumber you need to specify the location of your step definitions.
@@ -164,7 +171,7 @@ exports.config = {
         // <boolean> fail if there are any undefined or pending steps
         strict: false,
         // <string> (expression) only execute the features or scenarios with tags matching the expression
-        // tagExpression: '@only',
+        tagExpression: '@only',
         // <number> timeout for step definitions
         timeout: 60000,
         // <boolean> Enable this config to treat undefined definitions as warnings.

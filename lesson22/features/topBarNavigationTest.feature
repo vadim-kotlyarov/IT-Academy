@@ -1,3 +1,4 @@
+@only
 Feature: Testing top bar
 
   Scenario Outline: Verify top bar navigation
