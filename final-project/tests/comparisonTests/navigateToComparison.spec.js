@@ -1,10 +1,10 @@
 const { test, expect } = require ('@playwright/test');
-const MainPage = require('../pageobject/mainPage.js');
-const Header = require('../pageobject/components/header.js');
-const ComparisonPage = require('../pageobject/comparisonPage.js');
-const UserTools = require('../pageobject/components/userTools.js');
+const MainPage = require('../../pageobject/mainPage.js');
+const Header = require('../../pageobject/components/header.js');
+const ComparisonPage = require('../../pageobject/comparisonPage.js');
+const UserTools = require('../../pageobject/components/userTools.js');
 
-test.describe('Verify navigate to the cart', () => {
+test.describe('Verify navigate to the comparison', () => {
 
     test.use({storageState: 'state.json'});
 

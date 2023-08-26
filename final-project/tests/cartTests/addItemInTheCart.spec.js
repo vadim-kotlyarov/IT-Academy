@@ -1,11 +1,11 @@
 const { test, expect } = require ('@playwright/test');
-const MainPage = require('../pageobject/mainPage.js');
-const Header = require('../pageobject/components/header.js');
-const SearchResultsPage = require('../pageobject/searchResultsPage.js');
-const CatalogPage = require('../pageobject/catalogPage.js');
-const CartPage = require('../pageobject/cartPage.js');
-const ConfirmationModal = require('../pageobject/components/confirmationModal.js');
-const ProductDetailsPage = require('../pageobject/productDetailsPage.js');
+const MainPage = require('../../pageobject/mainPage.js');
+const Header = require('../../pageobject/components/header.js');
+const SearchResultsPage = require('../../pageobject/searchResultsPage.js');
+const CatalogPage = require('../../pageobject/catalogPage.js');
+const CartPage = require('../../pageobject/cartPage.js');
+const ConfirmationModal = require('../../pageobject/components/confirmationModal.js');
+const ProductDetailsPage = require('../../pageobject/productDetailsPage.js');
 
 test.describe('Verify add item to the cart', () => {
 

@@ -1,9 +1,9 @@
 const { test, expect } = require ('@playwright/test');
-const MainPage = require('../pageobject/mainPage.js');
-const Header = require('../pageobject/components/header.js');
-const SearchResultsPage = require('../pageobject/searchResultsPage.js');
-const CatalogPage = require('../pageobject/catalogPage.js');
-const ComparisonPage = require('../pageobject/comparisonPage.js');
+const MainPage = require('../../pageobject/mainPage.js');
+const Header = require('../../pageobject/components/header.js');
+const SearchResultsPage = require('../../pageobject/searchResultsPage.js');
+const CatalogPage = require('../../pageobject/catalogPage.js');
+const ComparisonPage = require('../../pageobject/comparisonPage.js');
 
 test.describe('Verify add item to the comparison', () => {
 

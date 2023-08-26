@@ -43,7 +43,7 @@ module.exports = defineConfig({
       name: 'chromium',
       // dependencies: ['setup'],
       use: { ...devices['Desktop Chrome'] },
-      testMatch: 'tests/loginTests/login.spec.js',
+      testMatch: 'tests/searchTests/search.spec.js',
     },
 
     // {

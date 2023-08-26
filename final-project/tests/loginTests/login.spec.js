@@ -1,10 +1,10 @@
 const { test, expect } = require ('@playwright/test');
-const MainPage = require('../pageobject/mainPage.js');
-const Header = require('../pageobject/components/header.js');
-const LoginModal = require('../pageobject/components/loginModal.js');
-const UserTools = require('../pageobject/components/userTools.js');
-const { credentials } = require ('../utils/model/credentials.js');
-const { errorMessage } = require ('../utils/model/errorMessage.js');
+const MainPage = require('../../pageobject/mainPage.js');
+const Header = require('../../pageobject/components/header.js');
+const LoginModal = require('../../pageobject/components/loginModal.js');
+const UserTools = require('../../pageobject/components/userTools.js');
+const { credentials } = require ('../../utils/model/credentials.js');
+const { errorMessage } = require ('../../utils/model/errorMessage.js');
 
 test.describe('Login verification for website 21vek.by', () => {
 
