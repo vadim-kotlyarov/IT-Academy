@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const MainPage = require('../../pageobject/mainPage.js');
 
-test.describe.only('Close overlays', () => {
+test.describe('Close overlays', () => {
   test('Should close cookie overlay', async ({ page }) => {
     const mainPage = new MainPage(page);
     await mainPage.navigate('https://www.21vek.by/');
