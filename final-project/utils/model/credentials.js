@@ -4,7 +4,7 @@ const credentials = {
   validEmail: 'vadimkotlyarov1990@gmail.com',
   validPassword: '2L1S4euk',
   emptyEmail: '',
-  emptyPassword: ''
+  emptyPassword: '',
 };
 
-module.exports = { credentials }
+module.exports = { credentials };

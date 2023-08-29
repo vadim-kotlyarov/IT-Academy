@@ -1,13 +1,11 @@
 class BasePage {
+  constructor(page) {
+    this.page = page;
+  }
 
-    constructor(page) {
-        this.page = page;
-    };
-
-    async navigate(url) {
-        await this.page.goto(url)
-    };
-
-};
+  async navigate(url) {
+    await this.page.goto(url);
+  }
+}
 
 module.exports = BasePage;
